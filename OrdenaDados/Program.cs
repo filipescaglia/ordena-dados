@@ -1,12 +1,18 @@
 ﻿using System;
-
-namespace OrdenaDados {
-    class Program {
-        static void Main(string[] args) {
+/*
+ * Classe principal do programa.
+ */
+namespace OrdenaDados
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             int menu, qtVet;
             DateTime start, end;
 
-            do {
+            do
+            {
                 Console.WriteLine("::::::: MENU :::::::");
                 Console.WriteLine("1 - Gerar vetor");
                 Console.WriteLine("2 - Bubble sort");
@@ -23,7 +29,8 @@ namespace OrdenaDados {
                 Console.Write("Escolha a opção desejada: ");
                 menu = int.Parse(Console.ReadLine());
 
-                switch (menu) {
+                switch (menu)
+                {
                     case 1:
                         Console.Write("Digite a quantidade de números no vetor: ");
                         qtVet = int.Parse(Console.ReadLine());
