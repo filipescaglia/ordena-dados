@@ -41,11 +41,12 @@ namespace OrdenaDados
 
                 if (left < right)
                 {
-                    if (vet[left] == vet[right]) return right;
-
                     int temp = vet[left];
                     vet[left] = vet[right];
                     vet[right] = temp;
+
+                    if (vet[left] == vet[right])
+                        left++;
                 }
                 else
                 {

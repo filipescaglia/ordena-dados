@@ -62,9 +62,9 @@ namespace OrdenaDados
         //Método responsável pela exibição do vetor não-ordenado.
         public static void ShowOriginalVector()
         {
-            foreach (int x in vO)
+            for (int i = 0; i < vO.Length; i++)
             {
-                Console.Write(x + "      ");
+                Console.Write(vO[i] + "      ");
             }
             Console.WriteLine();
         }
