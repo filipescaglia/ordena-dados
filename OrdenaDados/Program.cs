@@ -94,7 +94,7 @@ namespace OrdenaDados
                     case 7:
                         Vector.CopyVector();
                         start = DateTime.Now;
-                        Merge.Sort(Vector.v, 0, Vector.v.Length - 1);
+                        Merge.MergeSort(Vector.v, 0, Vector.v.Length - 1);
                         end = DateTime.Now;
                         Console.WriteLine("Vetor ordenado com sucesso!");
                         Time.CalcTime(start, end);
